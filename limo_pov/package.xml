@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>limo_pov</name>
+  <version>0.0.0</version>
+  <description>The limo_pov package</description>
+  <maintainer email="muhd@todo.todo">muhd</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>roscpp</buildtool_depend>
+</package>

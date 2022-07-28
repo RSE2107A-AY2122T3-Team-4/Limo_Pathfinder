@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+    <node name= "limo_pov_node" pkg="limo_pov" type="limo_pov_node" output="screen"/>
+</launch>

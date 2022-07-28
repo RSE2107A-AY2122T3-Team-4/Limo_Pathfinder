@@ -14,6 +14,13 @@
 		<param name="initial_pose_a"            value="0"/>
 	</node>
 
+	<!--  ************** Map **************  -->
+	<arg name="map_file" default="$(find limo_navigator)/map/map.yaml"/>
+
+	<node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)">
+		<param name="frame_id" value="map"/>
+	</node>
+
     <!--  ************** Navigation ***************  -->
 	<node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
   	  	<rosparam file="$(find limo_bringup)/param/diff/costmap_common_params.yaml" command="load" ns="global_costmap" />
